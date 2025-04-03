@@ -1,14 +1,11 @@
 package com.library.backend_epilogo.repositories;
 
-import com.library.backend_epilogo.Models.Categoria;
+import com.library.backend_epilogo.models.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
 
-public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
-    Optional<Categoria> findByNombre(String nombre);
-    boolean existsByNombre(String nombre);
+public interface CategoriaRepository extends JpaRepository<Category, Long> {
+
 }
